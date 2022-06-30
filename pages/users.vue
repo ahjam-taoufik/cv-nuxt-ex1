@@ -19,6 +19,7 @@ export default {
         getUser:function(){
             this.$router.push('/users/'+this.user)
         }
-    }
+    },
+    layout: 'usersLayout'
 }
 </script>
