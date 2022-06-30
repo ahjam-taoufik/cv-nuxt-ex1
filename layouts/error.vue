@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-   
     <h1 v-if="error.statusCode === 404">Page not found</h1>
     <h1 v-else>An error occurred</h1>
     <NuxtLink to="/users">Home page</NuxtLink>
@@ -9,6 +8,7 @@
 
 <script>
 export default {
+ 
   props: ['error'],
   layout: 'customError' // you can set a custom layout for the error page
 }
