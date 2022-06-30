@@ -34,6 +34,11 @@ li{
 }
 a{
     text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+a:hover{
+  color:rgb(115, 88, 238)
 }
 
 </style>
