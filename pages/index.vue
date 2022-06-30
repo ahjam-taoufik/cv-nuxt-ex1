@@ -37,6 +37,7 @@ export default {
   position: relative;
   padding: 10px;
   box-sizing: border-box;
+  background-image: url('~assets/images/tech-image.jpg');
   background-position: center;
   background-size: cover;
 }
