@@ -1,7 +1,7 @@
 <template>
 <div class="header-container2">
   <header class="the-header">
-
+     <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
     <div class="logo">
       <nuxt-link to="/">WD BLOG</nuxt-link>
     </div>
@@ -18,11 +18,11 @@
 </template>
 
 <script>
-
+import TheSideNavToggle from "@/components/TheSideNavToggle";
 export default {
   name: "TheHeader",
   components: {
-    
+     TheSideNavToggle
   }
 };
 </script>
@@ -47,7 +47,7 @@ export default {
 }
 
 .logo {
-  /* margin: 0 10px; */
+  margin: 0 10px;
   font-size: 1.3rem;
 
 }
