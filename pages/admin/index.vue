@@ -1,15 +1,39 @@
 <template>
-    <div>
-         <h1>Admin indx Page</h1>
+    <div class="admin-page">
+        <section class="new-post">
+            <button @click="$router.push('/admin/new-post')">Create Post</button>
+        </section>
+        <section class="existing-post">
+            <h1>Existing Post</h1>
+               <PostList/>
+
+        </section>
+        
     </div>
 </template>
 
 <script>
+   import PostList from "@/components/Posts/PostList";
     export default {
-        
+        components:{
+            PostList
+        }
     }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+.admin-page {
+  padding: 20px;
+}
+
+.new-post {
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.existing-posts h1 {
+  text-align: center;
+}
 
 </style>

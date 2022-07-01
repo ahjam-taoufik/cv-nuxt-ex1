@@ -3,30 +3,17 @@
     <section class="intro">
       <h1>tech News</h1>
     </section>
-
-    <section class="featured-posts">
-      <SinglePost
-        id="1"
-        title="title1"
-        previewText="previewText 1"
-        thumbnail="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-      />
-      <SinglePost
-        id="2"
-        title="title2"
-        previewText="previewText 2"
-        thumbnail="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-      />
-    </section>
+     <PostList />
+  
   </div>
 </template>
 
 <script>
-import SinglePost from "@/components/Posts/SinglePost";
+import PostList from "@/components/Posts/PostList";
 export default {
   name: "IndexPage",
   components: {
-    SinglePost,
+    PostList,
   },
 };
 </script>
@@ -63,7 +50,7 @@ export default {
   }
 }
 
-.featured-posts {
+.posts-list {
   display: flex;
   padding: 20px;
   /* box-sizing: border-box; */
