@@ -2,20 +2,9 @@
      <section class="posts-list">
       <SinglePost
         id="1"
+        v-bind:is-admin="isAdmin"
         title="title1"
         previewText="previewText 1"
-        thumbnail="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-      />
-      <SinglePost
-        id="2"
-        title="title2"
-        previewText="previewText 2"
-        thumbnail="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-      />
-      <SinglePost
-        id="2"
-        title="title2"
-        previewText="previewText 2"
         thumbnail="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
       />
     </section>
@@ -27,6 +16,12 @@ import SinglePost from "@/components/Posts/SinglePost";
          name: "PostList",
          components: {
     SinglePost,
+  },
+  props:{
+      isAdmin:{
+        type:Boolean,
+        default:false
+      }
   },
         
     }
