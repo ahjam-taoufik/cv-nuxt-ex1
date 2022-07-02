@@ -40,7 +40,7 @@ export default {
     },
     methods:{
         HandleSubmit:function(){
-            console.log(this.editedPost);
+            // console.log(this.editedPost);
         },
         onCancel:function(){
             this.$router.push('/admin')

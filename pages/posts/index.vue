@@ -8,6 +8,7 @@
 <script>
 import PostList from "@/components/Posts/PostList";
 export default {
+  middleware:'log',
   components: {
     PostList,
   },
@@ -23,7 +24,7 @@ export default {
   },
   created(){
     this.$store.dispatch('setPosts',this.loadedPosts)
-    console.log(this.$store.getters.loadedPosts);
+    // console.log(this.$store.getters.loadedPosts);
   }
 };
 </script>
